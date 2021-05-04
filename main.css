@@ -1,0 +1,111 @@
+html,body,div,h1,h2,h3,p,li,button,input {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 100px;
+    color: #fff;
+}
+
+button,input {
+    border:none;
+    background-color: #222;
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+button:active {
+    background-color: rgb(255,255,255,0.7);
+}
+
+
+
+input {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 100px;
+    color: #fff;
+}
+
+.main-contents {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.calculator-box {
+    width: 550px;
+    height: 100%;
+    background: #222;
+    border-radius: 10%;
+    padding: 50px 0px;
+}
+
+.calculation-result-area {
+    width: 80%;
+    text-align: right;
+    color: #fff;
+    font-size: 80px;
+    margin: 0 10%;
+    
+}
+
+.calculation-result-area p {
+    text-align: end;
+    font-size: 60px;
+    
+}
+
+.button-area {
+    padding: 0 50px;
+}
+
+.tenkey-button-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.button-appearance {
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin : 5px;
+    background-color: grey;
+    color: #fff;
+}
+.button-appearance.long {
+    width: 94%;
+    
+}
+
+.button-appearance.operator {
+    background-color: #f79314;
+}
+.button-appearance.equal-btn {
+    background-color: #f79314;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+    "area-ac area-four"
+    "area-ten area-four";
+    
+}
+
+#item-ac {
+    grid-area:area-ac;
+}
+#item-ten {
+    grid-area:area-ten;
+}
+#item-four {
+    grid-area:area-four;
+}
